@@ -1,0 +1,17 @@
+.cform { display:flex; flex-direction:column; gap:1rem; }
+.cform__row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.field { display:flex; flex-direction:column; gap:.4rem; }
+.field > span { font-family:var(--font-body); font-weight:600; font-size:.72rem; color:var(--primary); }
+.field > span b { color:var(--gold); }
+.field input,.field textarea { font-family:var(--font-body); font-size:.88rem; color:var(--primary); background:#fff; border:1px solid var(--grey-200); padding:.7rem .85rem; width:100%; resize:vertical; transition:border-color .2s var(--ease); }
+.field input::placeholder,.field textarea::placeholder { color:var(--grey-400); }
+.field input:focus,.field textarea:focus { outline:none; border-color:var(--gold); }
+.field--check { flex-direction:row; align-items:center; gap:.55rem; }
+.field--check input { width:15px; height:15px; accent-color:var(--gold); flex:none; }
+.field--check span { font-size:.78rem; color:var(--grey-700); font-weight:400; }
+.field--check a { text-decoration:underline; }
+.cform__submit { width:100%; margin-top:.4rem; padding-block:.8rem; }
+.cform--sent { gap:.75rem; align-items:flex-start; }
+.cform--sent h3 { font-size:1.4rem; }
+.cform--sent p { color:var(--grey-700); font-size:.9rem; }
+@media (max-width:560px){ .cform__row{grid-template-columns:1fr;} }

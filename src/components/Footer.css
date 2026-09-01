@@ -1,0 +1,11 @@
+.footer { background:#fff; }
+.footer__inner { padding-block:clamp(2rem,4vw,3rem) 1.5rem; display:flex; flex-direction:column; gap:1.5rem; align-items:flex-start; }
+.footer__logo img { height:28px; width:auto; }
+.footer__nav { display:flex; gap:2rem; flex-wrap:wrap; }
+.footer__nav a { font-size:.82rem; font-weight:500; color:var(--grey-700); transition:color .2s var(--ease); }
+.footer__nav a:hover { color:var(--primary); }
+.footer__base { display:flex; justify-content:space-between; align-items:center; padding-block:1.5rem; border-top:1px solid var(--grey-100); color:var(--grey-500); font-size:.75rem; }
+.footer__legal { display:flex; gap:1.5rem; }
+.footer__legal a { color:var(--grey-500); }
+.footer__legal a:hover { color:var(--primary); }
+@media (max-width:640px){ .footer__base{flex-direction:column;gap:.75rem;align-items:flex-start;} }
