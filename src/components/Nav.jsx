@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
+// Client Portal: WigleyHub (opens in a new tab so the NTRG site stays open).
+const PORTAL_URL = 'https://www.wigleyhub.com'
 const links = [
   { to: '/expertise', label: 'Our Expertise' },
   { to: '/services', label: 'Our Services' },
@@ -18,14 +20,14 @@ export default function Nav() {
           {links.map(l => <NavLink key={l.to} to={l.to} className={({isActive})=>`nav__link ${isActive?'is-active':''}`}>{l.label}</NavLink>)}
         </nav>
         <div className="nav__actions">
-          <a className="btn btn--outline nav__portal" href="#portal">Client Portal</a>
+          <a className="btn btn--outline nav__portal" href={PORTAL_URL} target="_blank" rel="noopener noreferrer">Client Portal</a>
           <Link className="btn btn--gold" to="/contact">Contact Us</Link>
         </div>
         <button className={`nav__burger ${open?'is-open':''}`} aria-label={open?'Close menu':'Open menu'} aria-expanded={open} onClick={()=>setOpen(v=>!v)}><span/><span/><span/></button>
       </div>
       <div className={`nav__mobile ${open?'is-open':''}`}>
         {links.map(l => <NavLink key={l.to} to={l.to} className="nav__mobile-link">{l.label}</NavLink>)}
-        <a className="nav__mobile-link" href="#portal">Client Portal</a>
+        <a className="nav__mobile-link" href={PORTAL_URL} target="_blank" rel="noopener noreferrer">Client Portal</a>
         <Link className="btn btn--gold" to="/contact" style={{marginTop:'0.75rem'}}>Contact Us</Link>
       </div>
     </header>

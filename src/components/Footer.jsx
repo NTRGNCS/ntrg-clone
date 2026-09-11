@@ -13,7 +13,7 @@ export default function Footer() {
       </div>
       <div className="wrap footer__base">
         <span>© {new Date().getFullYear()} National Tax Resource Group. All rights reserved.</span>
-        <span className="footer__legal"><a href="#terms">Terms</a><a href="#privacy">Privacy</a></span>
+        <span className="footer__legal"><Link to="/terms">Terms</Link><Link to="/privacy">Privacy</Link></span>
       </div>
     </footer>
   )
