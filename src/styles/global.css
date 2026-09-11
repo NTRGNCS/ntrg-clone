@@ -4,7 +4,7 @@
   --grey-900:#252B37; --grey-700:#414651; --grey-500:#717680;
   --grey-400:#A4A7AE; --grey-200:#D5D7DA; --grey-100:#E9EAEB; --white:#FFFFFF;
   --maxw: 1440px; --content: 1440px; --gutter: 112px;
-  --font-display: 'proxima-nova','Overpass','Archivo',system-ui,sans-serif;
+  --font-display: 'Montserrat','Archivo',system-ui,sans-serif;
   --font-body: 'Archivo',system-ui,sans-serif;
   --ease: cubic-bezier(0.22,1,0.36,1);
 }

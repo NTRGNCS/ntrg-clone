@@ -262,7 +262,7 @@
   .whowe__body { font-size:1.125rem; line-height:1.75rem; }
 }
 
-/* Their testimonial type: 2.5rem/800 proxima, 3.75rem line-height, -0.075rem tracking. */
+/* Their testimonial type: 2.5rem/800, 3.75rem line-height, -0.075rem tracking. */
 .tstory__quote { font-family:var(--font-display); font-size:2.5rem; font-weight:800; line-height:3.75rem; letter-spacing:-0.075rem; text-align:center; }
 .tstory__cite { font-size:1.125rem; font-weight:900; line-height:1.75rem; letter-spacing:0.031rem; color:var(--primary); text-align:center; margin-top:41px; }
 .tstory__dots { display:flex; justify-content:center; gap:8px; margin-top:41px; }
@@ -346,3 +346,16 @@
 
 /* Once the photo column is hidden, anchor the texture's light (left) side so text stays readable. */
 @media (max-width:860px){ .git { background-position:top left; } }
+
+/* Montserrat runs wider than Proxima Nova: slightly tighter tracking on the 40px
+   section headings keeps "We are National Tax Resource Group." comfortably on one line. */
+.weare__title, .premier__title, .whowe__title, .news__title, .git__heading, .mv__title { letter-spacing:-0.075rem; }
+
+/* Montserrat is wider: step hero headlines down on tablets and phones so they don't over-wrap. */
+@media (max-width:1200px){
+  .hero__title, .phero__title { font-size:3.5rem; line-height:3.875rem; letter-spacing:-0.07rem; }
+}
+@media (max-width:767px){
+  .hero__title, .phero__title { font-size:2.5rem; line-height:2.875rem; letter-spacing:-0.05rem; }
+  .weare__title, .premier__title, .whowe__title, .mv__title, .einstein p { font-size:2rem; line-height:2.375rem; letter-spacing:-0.05rem; }
+}
