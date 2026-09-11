@@ -688,3 +688,16 @@ main > section, main > div { max-width:1440px; margin-left:auto; margin-right:au
   .legal { padding:48px 0 64px; }
   .legal__body h2 { margin-top:36px; font-size:1.25rem; line-height:1.75rem; }
 }
+
+/* =====================================================================
+   CONTACT — matched to vendor (Sept 2026 screenshot)
+   ===================================================================== */
+.coast2 { text-align:center; padding:80px 0 88px; }
+.coast2__title { font-size:2rem; line-height:2.5rem; font-weight:800; letter-spacing:-0.04rem; color:var(--primary); }
+.coast2__sub { margin-top:8px; font-size:1rem; line-height:1.5rem; color:var(--text); }
+.mapband2 { border-top:4px solid transparent; border-image:url('/textures/gold-horizontal.jpg') 30 stretch;
+  background:linear-gradient(80deg, #07080D 0%, #12162A 45%, #283258 100%); padding:64px 0 56px; }
+.mapband2__map { display:block; width:100%; max-width:1112px; height:auto; margin:0 auto; }
+@media (max-width:767px){ .coast2 { padding:56px 0 56px; } .coast2__title { font-size:1.625rem; line-height:2.125rem; } .mapband2 { padding:40px 0; } }
+.coast2__title { font-size:2.25rem; line-height:2.75rem; }
+@media (max-width:767px){ .coast2__title { font-size:1.625rem; line-height:2.125rem; } }

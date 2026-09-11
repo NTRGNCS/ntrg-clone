@@ -1,11 +1,24 @@
+/* Footer — values from the vendor's footer stylesheet (post-93.css):
+   64px top / 48px bottom padding, 160px logo, 32px between logo and menu,
+   Archivo 16px/600 menu links 32px apart (#535862, gold on hover, current page underlined),
+   64px down to a #E9EAEB rule, 32px to 16px copyright/legal text in #717680. */
 .footer { background:#fff; }
-.footer__inner { padding-block:clamp(2rem,4vw,3rem) 1.5rem; display:flex; flex-direction:column; gap:1.5rem; align-items:flex-start; }
-.footer__logo img { height:28px; width:auto; }
-.footer__nav { display:flex; gap:2rem; flex-wrap:wrap; }
-.footer__nav a { font-size:.82rem; font-weight:500; color:var(--grey-700); transition:color .2s var(--ease); }
-.footer__nav a:hover { color:var(--primary); }
-.footer__base { display:flex; justify-content:space-between; align-items:center; padding-block:1.5rem; border-top:1px solid var(--grey-100); color:var(--grey-500); font-size:.75rem; }
-.footer__legal { display:flex; gap:1.5rem; }
-.footer__legal a { color:var(--grey-500); }
-.footer__legal a:hover { color:var(--primary); }
-@media (max-width:640px){ .footer__base{flex-direction:column;gap:.75rem;align-items:flex-start;} }
+.footer__wrap { max-width:1440px; margin:0 auto; padding:64px 112px 48px; }
+.footer__inner { display:flex; flex-direction:column; gap:32px; align-items:flex-start; }
+.footer__logo img { width:160px; height:auto; }
+.footer__nav { display:flex; gap:12px 32px; flex-wrap:wrap; }
+.footer__nav a { font-size:1rem; line-height:1.5rem; font-weight:600; color:#535862; position:relative; transition:color .2s var(--ease); }
+.footer__nav a:hover { color:var(--gold); }
+.footer__nav a.active { color:var(--primary); }
+.footer__nav a.active::after { content:""; position:absolute; left:0; bottom:-2px; width:100%; height:2px; background:var(--primary); }
+.footer__base { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;
+  margin-top:64px; padding-top:32px; border-top:1px solid #E9EAEB; color:#717680; font-size:1rem; line-height:1.5rem; }
+.footer__legal { display:flex; gap:16px; }
+.footer__legal a { color:#717680; }
+.footer__legal a:hover { color:var(--gold); }
+@media (max-width:1200px){ .footer__wrap { padding:64px 56px 48px; } }
+@media (max-width:767px){
+  .footer__wrap { padding:40px 16px 48px; }
+  .footer__base { flex-direction:column; align-items:flex-start; }
+  .footer__legal { order:-1; }
+}

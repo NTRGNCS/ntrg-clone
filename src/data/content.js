@@ -263,7 +263,7 @@ export const contactPage = {
   heroLine2: 'property less taxing.',
   heroSub: 'Contact us to learn more about NTRG and start working with the experts.',
   mapHeading: 'Expertise from coast to coast.',
-  mapSub: 'Our offices are anywhere you are',
+  mapSub: 'Our offices are anywhere you are.',
 }
 
 export const getInTouch = { heading: 'Get in touch.', sub: 'Contact us to make owning property less taxing.' }

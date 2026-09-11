@@ -14,7 +14,7 @@ export default function Nav() {
   useEffect(() => { setOpen(false) }, [pathname])
   return (
     <header className="nav">
-      <div className="nav__inner wrap-wide">
+      <div className="nav__inner">
         <Link to="/" className="nav__logo" aria-label="NTRG home"><img src="/NTRG-Logo.svg" alt="NTRG" /></Link>
         <nav className="nav__links" aria-label="Primary">
           {links.map(l => <NavLink key={l.to} to={l.to} className={({isActive})=>`nav__link ${isActive?'is-active':''}`}>{l.label}</NavLink>)}
