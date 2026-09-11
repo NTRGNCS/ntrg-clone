@@ -62,9 +62,9 @@ export const process = {
   heading: 'Our process.',
   body: 'By signing on with NTRG, you launch a strategic team of local experts empowered by a proprietary business model focused on leveraging advanced technology and centered around your business. Through a streamlined, collaborative process led by your dedicated tax advisor, we leave no leaf unturned for better appeal outcomes every time.',
   steps: [
-    { label: 'Step One', body: 'A single agreement is drafted and signed for your entire engagement portfolio.' },
-    { label: 'Step Two', body: 'All your assets are immediately set up in NTRG\u2019s TaxNav system, allowing you to access your portfolio and manage your property tax information anytime.' },
-    { label: 'Step Three', body: 'NTRG works with our hyper-local, world-class consultants to assess our assets and capitalize on every opportunity with our Dual Review System ensuring we maximize your value and minimize your property tax liability.' },
+    { label: 'Step One', icon: 'document', body: 'A single agreement is drafted and signed for your entire engagement portfolio.' },
+    { label: 'Step Two', icon: 'exchange', body: 'All your assets are immediately set up in NTRG\u2019s TaxNav system, allowing you to access your portfolio and manage your property tax information anytime.' },
+    { label: 'Step Three', icon: 'globe', body: 'NTRG works with our hyper-local, world-class consultants to assess our assets and capitalize on every opportunity with our Dual Review System ensuring we maximize your value and minimize your property tax liability.' },
   ],
 }
 
@@ -72,19 +72,19 @@ export const difference = {
   heading: 'Our difference.',
   body: 'When it comes to property tax advisory, there are four options: turning to a traditional national firm, managing your own team, pushing the decision \u201cdownstream,\u201d or, our favorite option, partnering with NTRG. See how we blow the competition out of the property tax water through our experts, process, and outcomes.',
   items: [
-    { label: 'Differentiator One', title: 'Hyper-local experts for your success' },
-    { label: 'Differentiator Two', title: 'Fee consistency and leveraging' },
-    { label: 'Differentiator Three', title: 'Dual review system for optimized appeals' },
-    { label: 'Differentiator Four', title: 'Access to proprietary technology' },
-    { label: 'Differentiator Five', title: 'Compliance and late payment indemnification' },
-    { label: 'Differentiator Six', title: 'Centralized and consistent consulting' },
+    { label: 'Differentiator One', icon: 'pin', title: 'Hyper-local experts for your success' },
+    { label: 'Differentiator Two', icon: 'document', title: 'Fee consistency and leveraging' },
+    { label: 'Differentiator Three', icon: 'search', title: 'Dual review system for optimized appeals' },
+    { label: 'Differentiator Four', icon: 'fileCheck', title: 'Access to proprietary technology' },
+    { label: 'Differentiator Five', icon: 'coins', title: 'Compliance and late payment indemnification' },
+    { label: 'Differentiator Six', icon: 'target', title: 'Centralized and consistent consulting' },
   ],
 }
 
 export const comparison = {
   heading: 'With us, there is no competition.',
   sub: 'See how the competition stacks up against NTRG.',
-  columns: ['NTRG', 'BIG NATIONALS / RYAN', 'MANAGED IN-HOUSE'],
+  columns: ['NTRG', ['BIG NATIONALS', '/ RYAN'], ['MANAGED', 'IN-HOUSE']],
   rows: [
     { label: 'LOCAL EXPERTISE', ntrg: true, big: false, inhouse: true },
     { label: 'MOTIVATED EXPERTS', ntrg: true, big: false, inhouse: true },

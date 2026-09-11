@@ -403,3 +403,92 @@
   .ctable thead th.col-label, .ctable tbody td.col-label { width:40%; padding-left:0; }
   .ctable tbody td.col-label { font-size:.75rem; line-height:1.1rem; letter-spacing:.01em; }
 }
+
+/* =====================================================================
+   OUR EXPERTISE — rebuilt to the vendor layout (measured from side-by-side
+   screenshots at ~1234px wide).
+   ===================================================================== */
+
+/* Hero: stepped left edge (52px, 45° step to 124px), text in a centered 768px column,
+   gold triangle straddling the bottom edge. */
+.phero--notch { background:transparent; overflow:visible; }
+.phero__shape { position:absolute; inset:0; overflow:hidden;
+  clip-path:polygon(52px 0, 100% 0, 100% 100%, 124px 100%, 124px 376px, 52px 304px); }
+.phero__inner--col { max-width:calc(768px + 2 * var(--gutter)); }
+@media (max-width:1100px){ .phero__shape { clip-path:none; } }
+
+/* Big quote: one sentence per line, like the vendor. */
+.pullquote p { max-width:none; }
+.pullquote p span { display:block; text-wrap:balance; }
+@media (max-width:767px){ .pullquote p span { display:inline; } }
+
+/* Process + difference band: content area (74%) + light textured strip on the right. */
+.xband { position:relative; background:#ececec url('/textures/premier-texture.webp') top left/1440px auto repeat; }
+.xband__main { width:74%; position:relative; z-index:1; }
+.xproc { background:linear-gradient(228.09deg, #2A3760 6.9%, #030409 88.22%); padding:112px var(--gutter) 96px; }
+.xdiff { background:#fff; padding:112px var(--gutter) 96px; }
+.xcol { max-width:616px; }
+.xlead { font-size:1.25rem; line-height:1.875rem; margin-top:16px; }
+.xproc .xlead { color:rgba(255,255,255,.9); }
+.xdiff .xlead { color:var(--navy-black); }
+.xhead { font-size:2.5rem; line-height:2.75rem; letter-spacing:-0.075rem; font-weight:800; color:var(--primary); }
+.xicon { width:32px; height:32px; color:var(--gold); }
+.xproc .xicon { color:#C8922A; }
+.xsteps { margin-top:96px; display:flex; flex-direction:column; gap:48px; }
+.xstep, .xitem { display:grid; grid-template-columns:32px 1fr; column-gap:20px; align-items:start; }
+.xstep__title { font-family:var(--font-display); font-weight:700; font-size:1.25rem; line-height:1.75rem; letter-spacing:0; color:#fff; }
+.xstep__body { font-size:1rem; line-height:1.5rem; color:rgba(255,255,255,.9); margin-top:4px; }
+.xitems { margin-top:80px; display:grid; grid-template-columns:1fr 1fr; gap:56px; }
+.xitem .xicon { margin-top:-4px; }
+.xitem__label { font-size:1rem; line-height:1.5rem; color:#9A9DA4; }
+.xitem__title { font-family:var(--font-display); font-weight:700; font-size:1.25rem; line-height:1.5rem; letter-spacing:0; color:var(--navy-black); margin-top:12px; }
+.ximg { width:100%; aspect-ratio:3/2; object-fit:cover; margin-top:64px; }
+.xband__tri { position:absolute; left:74%; width:140px; height:70px; transform:translateX(-50%); z-index:2;
+  background:url('/textures/gold-horizontal.jpg') center/cover; }
+.xband__tri--top { top:0; clip-path:polygon(0 0, 100% 0, 50% 100%); }
+.xband__tri--bottom { bottom:0; clip-path:polygon(50% 0, 100% 100%, 0 100%); }
+@media (max-width:900px){ .xband__main { width:100%; } .xband__tri { display:none; } }
+@media (max-width:767px){
+  .xproc, .xdiff { padding:64px var(--gutter); }
+  .xhead { font-size:2rem; line-height:2.375rem; letter-spacing:-0.05rem; }
+  .xlead { font-size:1.125rem; line-height:1.75rem; }
+  .xsteps, .xitems { margin-top:48px; }
+  .xitems { grid-template-columns:1fr; gap:32px; }
+  .ximg { margin-top:48px; }
+}
+
+/* Comparison table: logo header, 3px gold box, circle checks, 52px rows. */
+.compare__head p { font-size:1.25rem; line-height:1.875rem; color:#fff; }
+.ctable { max-width:904px; table-layout:fixed; }
+.ctable th, .ctable td { padding:0 12px; }
+.ctable thead th { height:98px; vertical-align:middle; font-family:var(--font-display); font-weight:700;
+  font-size:.9375rem; line-height:1.125rem; color:#fff; text-transform:uppercase; }
+.ctable thead th.col-label { width:37%; }
+.ctable__hl { display:block; }
+.ctable__logo { height:28px; width:auto; margin:0 auto; position:relative; z-index:1; }
+.ctable tbody td { height:52px; }
+.ctable tbody tr { border-top:none; }
+.ctable tbody tr + tr { border-top:1px solid rgba(255,255,255,.16); }
+.ctable tbody td.col-label { padding-left:0; font-family:var(--font-display); font-weight:600; font-size:1rem;
+  letter-spacing:.02em; color:#fff; }
+.ctable .col-ntrg::before { border-inline:3px solid #C49A43; background:none; }
+.ctable thead .col-ntrg::before { border-top:3px solid #C49A43; }
+.ctable tbody tr:last-child .col-ntrg::before { border-bottom:3px solid #C49A43; }
+.ctable .icon-y { color:#9A9DA4; }
+.ctable .icon-y--ntrg { color:#D9A23A; }
+.ctable .icon-n { color:#9A9DA4; width:16px; height:16px; }
+@media (max-width:720px){
+  .ctable thead th { height:72px; font-size:.625rem; line-height:.875rem; }
+  .ctable__logo { height:16px; }
+  .ctable th, .ctable td { padding:0 .3rem; }
+  .ctable tbody td { height:48px; }
+  .ctable tbody td.col-label { font-size:.75rem; line-height:1.05rem; letter-spacing:.01em; }
+  .ctable .icon-y { width:20px; height:20px; }
+}
+/* Montserrat is wider than the vendor's font: scale the quote with the window so each sentence holds one line. */
+.pullquote p { font-size:clamp(2rem, 3.4vw, 3rem); line-height:1.15; }
+/* Fine-tuning after side-by-side comparison. */
+.xproc, .xdiff { padding-top:96px; }
+.xitem__title { font-size:1.125rem; line-height:1.5rem; }
+.compare { background:linear-gradient(228deg, #252C47 0%, #181C28 55%, #111319 100%); }
+@media (max-width:767px){ .xproc, .xdiff { padding-top:64px; } }
