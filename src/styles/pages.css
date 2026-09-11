@@ -625,3 +625,42 @@ main > section, main > div { max-width:1440px; margin-left:auto; margin-right:au
 /* Premier card on About: text top-aligned and a 540px photo column, as on the vendor page. */
 .premier--band .premier__card { align-items:start; grid-template-columns:minmax(0,1fr) minmax(0,540px); }
 @media (max-width:860px){ .premier--band .premier__card { grid-template-columns:1fr; } }
+
+/* =====================================================================
+   NEWS & INSIGHTS — matched to vendor (Sept 2026 screenshot)
+   ===================================================================== */
+.nhero { min-height:450px; padding-top:96px; color:#fff;
+  background:linear-gradient(80deg, #050609 0%, #12162A 45%, #283258 100%); }
+.nhero__title { color:#fff; font-size:4.313rem; font-weight:800; line-height:4.688rem; letter-spacing:-0.086rem; }
+.nhero__sub { max-width:768px; margin-top:24px; font-size:1.5rem; line-height:2rem; color:rgba(255,255,255,.92); }
+
+.nlist { padding-bottom:104px; }
+.ncard--feature { margin-top:-96px; position:relative; }
+.ncard__media { display:block; overflow:hidden; }
+.ncard__media img { width:100%; aspect-ratio:594/321; object-fit:cover; display:block; transition:transform .5s var(--ease); }
+.ncard--feature .ncard__media img { aspect-ratio:1218/504; }
+.ncard:hover .ncard__media img { transform:scale(1.03); }
+.ncard__meta { display:flex; justify-content:space-between; gap:16px; margin-top:18px;
+  font-size:.75rem; line-height:1rem; font-weight:700; color:var(--gold); }
+.ncard__row { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-top:12px; }
+.ncard__title { font-family:var(--font-display); font-weight:700; font-size:1.125rem; line-height:1.5rem; letter-spacing:0; color:var(--navy-black); }
+.ncard__title a:hover { color:var(--gold); }
+.ncard__arrow { flex:none; color:var(--navy-black); font-size:.9rem; line-height:1.5rem; }
+.ncard__excerpt { margin-top:8px; font-size:.875rem; line-height:1.375rem; color:var(--text); }
+.ngrid { display:grid; grid-template-columns:1fr 1fr; gap:64px 32px; margin-top:64px; }
+.ndivider { height:4px; background:url('/textures/gold-horizontal.jpg') center/cover; }
+
+@media (max-width:1200px){ .nhero__title { font-size:3.5rem; line-height:3.875rem; letter-spacing:-0.07rem; } }
+@media (max-width:767px){
+  .nhero { min-height:0; padding:64px 0 136px; }
+  .nhero__title { font-size:2.5rem; line-height:2.875rem; letter-spacing:-0.05rem; }
+  .nhero__sub { font-size:1.125rem; line-height:1.75rem; }
+  .ncard--feature { margin-top:-72px; }
+  .ncard--feature .ncard__media img { aspect-ratio:16/10; }
+  .ngrid { grid-template-columns:1fr; gap:48px; margin-top:48px; }
+  .nlist { padding-bottom:64px; }
+}
+/* Measured against vendor: card titles ~20px, excerpts ~16px. */
+.ncard__title { font-size:1.25rem; line-height:1.75rem; }
+.ncard__arrow { line-height:1.75rem; }
+.ncard__excerpt { font-size:1rem; line-height:1.5rem; }

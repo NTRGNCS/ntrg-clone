@@ -234,7 +234,7 @@ export const posts = [
     date: 'May 28, 2025', author: 'Clayton Wigley',
     title: 'Texas closes property tax loophole with passage of HB 21.',
     excerpt: 'Texas lawmakers have officially shut down a controversial property tax loophole with the passage of House Bill 21, signed into law by Governor Greg Abbott, which we at......',
-    image: '/images/post-hb21.jpg',
+    image: '/images/post-founder.jpg', // Dallas skyline (file name is historical)
     body: [
       { h: null, p: 'Texas lawmakers have officially shut down a controversial property tax loophole with the passage of House Bill 21, signed into law by Governor Greg Abbott, which we at National Tax Resource Group see as a positive development that reinforces fairness, transparency, and accountability in the Texas property tax landscape, especially for our clients who own fully taxable commercial real estate and multifamily assets.' },
       { h: 'About House Bill 21.', p: 'The bill targets \u201ctraveling\u201d housing finance corporations (HFCs) that partnered with developers to secure tax exemptions for multifamily properties far outside their jurisdictions, often without local oversight. These arrangements removed millions in taxable value from local rolls. In Bexar County alone, over two dozen properties tied to distant HFCs were set to erase $21.5 million in annual taxes, impacting school districts, hospitals, and other local services.' },
@@ -247,7 +247,7 @@ export const posts = [
     date: 'May 22, 2025', author: 'Clayton Wigley',
     title: 'Why I started NTRG.',
     excerpt: 'I didn\u2019t start NTRG because I wanted to run a business. I started it because the real estate community desperately needed a solution, and no one else was stepping up....',
-    image: '/images/post-founder.jpg',
+    image: '/images/post-hb21.jpg', // gold N-logo image (file name is historical)
     body: [
       { h: null, p: 'I didn\u2019t start NTRG because I wanted to run a business. I started it because the real estate community desperately needed a solution, and no one else was stepping up.' },
       { h: null, p: 'After more than a decade at the largest property tax consulting firm in the country, I saw the writing on the wall. The industry was born from crisis. The real estate crash of 1987 sent shockwaves through the market. Assessments were grossly inflated, property values were crumbling, and in that chaos a new industry emerged. Consulting firms like the one I worked for grew fast, fueled by urgent demand. From Texas to Florida, California to New York, property owners needed real help.' },
