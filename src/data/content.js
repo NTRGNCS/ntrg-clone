@@ -4,6 +4,8 @@
 
 export const contactInfo = {
   addressLines: ['16479 Dallas Parkway, Suite 140', 'Addison, Texas 75001'],
+  // Corporate office is Addison (above). Additional offices listed by city until street addresses are provided.
+  additionalOffices: ['Houston, Texas', 'Boca Raton, Florida'],
   phone: '(972) 233-1500',
   phoneHref: 'tel:+19722331500',
   email: 'info@ntrg-tax.com',

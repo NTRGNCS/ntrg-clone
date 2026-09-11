@@ -701,3 +701,5 @@ main > section, main > div { max-width:1440px; margin-left:auto; margin-right:au
 @media (max-width:767px){ .coast2 { padding:56px 0 56px; } .coast2__title { font-size:1.625rem; line-height:2.125rem; } .mapband2 { padding:40px 0; } }
 .coast2__title { font-size:2.25rem; line-height:2.75rem; }
 @media (max-width:767px){ .coast2__title { font-size:1.625rem; line-height:2.125rem; } }
+.gcontact dd > span { display:block; }
+.legal__offices { margin:8px 0 6px; }

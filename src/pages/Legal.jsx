@@ -30,8 +30,9 @@ export default function Legal({ doc }) {
             <h2>Contact us</h2>
             <p>{doc.contactIntro}</p>
             <address className="legal__contact">
-              <span>National Tax Resource Group</span>
+              <span>National Tax Resource Group, Corporate Office</span>
               {contactInfo.addressLines.map(l => <span key={l}>{l}</span>)}
+              <span className="legal__offices">Additional offices: {contactInfo.additionalOffices.join(' and ')}</span>
               <span>Phone: <a href={contactInfo.phoneHref}>{contactInfo.phone}</a></span>
               <span>Email: <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></span>
             </address>

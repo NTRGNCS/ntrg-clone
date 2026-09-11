@@ -19,10 +19,14 @@ export default function GetInTouch() {
               <dd><a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></dd>
             </div>
             <div className="gcontact__row">
-              <dt>Main office</dt>
+              <dt>Corporate office</dt>
               <dd><a href={mapsHref} target="_blank" rel="noreferrer">
                 {contactInfo.addressLines.map(l => <span key={l}>{l}</span>)}
               </a></dd>
+            </div>
+            <div className="gcontact__row">
+              <dt>Additional offices</dt>
+              <dd>{contactInfo.additionalOffices.map(o => <span key={o}>{o}</span>)}</dd>
             </div>
           </dl>
           <a className="btn btn--gold gcontact__cta" href={`mailto:${contactInfo.email}`}>Email Us</a>
