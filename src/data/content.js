@@ -106,13 +106,25 @@ export const servicesHero = {
 }
 
 export const premierServices = [
-  { title: 'Comprehensive property tax consulting', body: 'What\u2019s the point of just hiring someone when you can have the best local expert? We want you to feel confident in your appeals, so we provide our clients with tailored strategies on litigation, tax appeals, pre-acquisition planning, and more.' },
-  { title: 'Client and property-focused expertise', body: 'The second you meet with one of our advisors, you\u2019ll see our dedication to our craft and to you. Through steadfast support and actionable insights, we work to simplify property tax management and ensure optimal outcomes.' },
-  { title: 'Property tax appeals', body: 'This is the core of who we are, with our objective always being to ensure our client\u2019s property tax liability is minimized and opportunities for fair asset value assessments are maximized.' },
-  { title: 'Proprietary technology, including Tax-Nav client portal', body: 'Harnessing the power of the latest and greatest, we empower you with a proprietary platform for database management, reporting, and tax planning.' },
-  { title: 'Exclusive database access', body: 'Take advantage of the resources we have sourced for our clients through complimentary use of our proprietary platform, offering detailed insights into property values, tax records, and historical trends.' },
-  { title: 'Tax bill administration', body: 'From big-picture strategy to hands-on administration, NTRG ensures all tax bills are accounted and paid for.' },
+  { title: 'Comprehensive property tax consulting', body: 'What\u2019s the point of just hiring someone when you can have the best local expert? We want you to feel confident in your appeals, so we provide our clients with tailored strategies on litigation, tax appeals, pre-acquisition analysis, annual budgeting, compliance, and tax bill processing.', icon: 'consult' },
+  { title: 'Client and property-focused expertise', body: 'The second you meet with one of our advisors, you\u2019ll see our dedication to our craft and to you. Through steadfast support and actionable insights, we work to simplify property tax management and ensure optimal outcomes.', icon: 'building' },
+  { title: 'Property tax appeals', body: 'This is the core of who we are, with our objective always being to ensure our client\u2019s property tax liability is minimized and opportunities for fair asset value assessments are maximized.', icon: 'appeals' },
+  { title: 'Proprietary technology, including Tax-Nav client portal', body: 'Harnessing the power of the latest and greatest, we empower you with a proprietary platform for database management, reporting, and tax planning.', icon: 'monitor' },
+  { title: 'Exclusive database access', body: 'Take advantage of the resources we have sourced for our clients through complimentary use of our proprietary platform, offering detailed insights into property values, tax records, and historical trends.', icon: 'database' },
+  { title: 'Tax bill administration', body: 'From big-picture strategy to hands-on administration, NTRG ensures all tax bills are accounted and paid for.', icon: 'receipt' },
 ]
+
+// Services page sections added to match the vendor layout (Sept 2026 screenshots).
+export const servicesPage = {
+  premierHeading: 'Premier services.',
+  premierIntro: 'We have advisors all over the US who are not just experts but the experts in their area. By keeping a pulse on the market, they meet your appeals with drive, motivation, and hyper-local industry knowledge for the best results every time.',
+  trulyHeading: 'We truly do it all.',
+  trulySub: 'Explore our additional, end-to-end commercial property tax services.',
+  ctaCards: [
+    { heading: 'Our expertise.', body: 'Discover how hyper-local expertise from the best property tax professionals around the country can maximize your business\u2019s savings year in and year out.', cta: 'Our Expertise', to: '/expertise', image: '/images/mission.jpg' },
+    { heading: 'Who we are.', body: 'Through our mission, our vision, and the exceptional people we bring on our team, we remain committed to delivering unmatched value.', cta: 'Meet NTRG', to: '/about', image: '/images/vision.jpg' },
+  ],
+}
 
 export const otherServices = [
   'Cost Segregation', 'Incentives and Abatements', 'Pre-acquisition Reports',

@@ -492,3 +492,87 @@
 .xitem__title { font-size:1.125rem; line-height:1.5rem; }
 .compare { background:linear-gradient(228deg, #252C47 0%, #181C28 55%, #111319 100%); }
 @media (max-width:767px){ .xproc, .xdiff { padding-top:64px; } }
+
+/* =====================================================================
+   SITE-WIDE: keep every section inside a centered 1440px box, like the
+   vendor site. Prevents textures/bands breaking on very wide screens.
+   ===================================================================== */
+main > section, main > div { max-width:1440px; margin-left:auto; margin-right:auto; }
+
+/* =====================================================================
+   OUR SERVICES — rebuilt to the vendor layout
+   ===================================================================== */
+.phero__title--flow span { display:inline; }
+
+/* Full-width photo -> navy intro -> cards overlapping onto texture */
+.spremier { margin-top:70px; }
+.spremier__photo { position:relative; }
+.spremier__photo > img:first-child { width:100%; aspect-ratio:1440/636; min-height:280px; object-fit:cover; display:block; }
+.spremier__tri { position:absolute; left:0; bottom:0; width:70px; height:140px; transform:translateY(50%) scaleX(-1); z-index:2; pointer-events:none; }
+.spremier__navy { background:linear-gradient(228.09deg, #2A3760 6.9%, #030409 88.22%); padding:104px 0 206px; }
+.spremier__intro { max-width:768px; margin-top:16px; font-size:1.25rem; line-height:1.875rem; color:rgba(255,255,255,.92); }
+.spremier__cardsband { background:#f1f1f1 url('/textures/premier-texture.webp') top center/1440px auto; padding-bottom:96px; }
+.scards { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; margin-top:-126px; position:relative; }
+.scard { background:#fff; padding:28px 24px 40px; }
+.scard__icon { width:56px; height:56px; color:var(--gold); }
+.scard__title { margin-top:44px; font-family:var(--font-display); font-weight:600; font-size:1.25rem; line-height:1.875rem; letter-spacing:0; color:var(--navy-black); }
+.scard__body { margin-top:12px; font-size:1rem; line-height:1.5rem; color:var(--text); }
+@media (max-width:1024px){ .scards { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:767px){
+  .spremier { margin-top:48px; }
+  .spremier__navy { padding:64px 0 150px; }
+  .spremier__intro { font-size:1.125rem; line-height:1.75rem; }
+  .scards { grid-template-columns:1fr; gap:20px; margin-top:-86px; }
+  .spremier__cardsband { padding-bottom:64px; }
+  .scard__title { margin-top:28px; }
+}
+
+/* "We truly do it all": white area + navy strip on the right (26%), photo straddles it */
+.struly { position:relative; background:#fff; padding:96px 0; }
+.struly__strip { position:absolute; top:0; bottom:0; right:0; width:26%; background:linear-gradient(200deg, #25305A 0%, #0B0E1A 100%); }
+.struly__inner { position:relative; z-index:1; }
+.struly__sub { margin-top:12px; font-size:1.125rem; line-height:1.75rem; color:var(--navy-black); }
+.struly__row { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,578px); gap:60px; margin-top:80px; align-items:start; }
+.struly__list { list-style:none; display:grid; grid-template-columns:1fr 1fr; grid-template-rows:repeat(7,auto); grid-auto-flow:column;
+  column-gap:32px; row-gap:32px; max-width:580px; align-content:start; }
+.struly__list li { display:grid; grid-template-columns:32px 1fr; column-gap:20px; align-items:start;
+  font-family:var(--font-display); font-weight:700; font-size:1.125rem; line-height:1.875rem; color:var(--navy-black); }
+.struly__tick { width:32px; height:32px; color:var(--gold); }
+.struly__media img { width:100%; aspect-ratio:578/616; object-fit:cover; display:block; }
+.struly .xband__tri { left:74%; }
+@media (max-width:900px){
+  .struly__strip, .struly .xband__tri { display:none; }
+  .struly__row { grid-template-columns:1fr; gap:48px; margin-top:48px; }
+}
+@media (max-width:600px){
+  .struly { padding:64px 0; }
+  .struly__list { grid-template-columns:1fr; grid-template-rows:none; grid-auto-flow:row; row-gap:20px; }
+  .struly__list li { font-size:1rem; line-height:1.625rem; grid-template-columns:28px 1fr; column-gap:14px; }
+  .struly__tick { width:28px; height:28px; }
+}
+
+/* Cross-link cards on a navy band */
+.scta { background:linear-gradient(228.09deg, #2A3760 6.9%, #030409 88.22%); padding:112px 0; }
+.scta__list { display:flex; flex-direction:column; gap:16px; }
+.scta__card { background:#fff; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,564px); align-items:center; padding-block:33px; }
+.scta__card--rev { grid-template-columns:minmax(0,564px) minmax(0,1fr); }
+.scta__card--rev .scta__media { order:-1; }
+.scta__text { padding:0 64px; }
+.scta__text p { margin:16px 0 24px; max-width:485px; font-size:1.125rem; line-height:1.75rem; color:var(--text); }
+.scta__media img { width:100%; height:345px; object-fit:cover; display:block; }
+.scta__btn { font-size:1rem; line-height:1.5rem; padding:12px 24px; }
+@media (max-width:860px){
+  .scta { padding:64px 0; }
+  .scta__card, .scta__card--rev { grid-template-columns:1fr; padding-block:0; }
+  .scta__media { order:-1; }
+  .scta__media img { height:240px; }
+  .scta__text { padding:28px 24px 32px; }
+}
+/* Services fine-tuning after side-by-side comparison */
+.spremier__cardsband { display:flow-root; }          /* stop the cards' negative margin collapsing, so they overlap the navy */
+.spremier__intro { font-size:1.5rem; line-height:1.875rem; }
+.struly__row { margin-top:100px; }
+.struly__lists { display:grid; grid-template-columns:1fr 1fr; column-gap:32px; max-width:580px; align-content:start; }
+.struly__list { display:flex; flex-direction:column; gap:32px; grid-template-columns:none; grid-template-rows:none; max-width:none; }
+@media (max-width:767px){ .spremier__intro { font-size:1.125rem; line-height:1.75rem; } }
+@media (max-width:600px){ .struly__lists { grid-template-columns:1fr; row-gap:20px; } .struly__list { gap:20px; } }
