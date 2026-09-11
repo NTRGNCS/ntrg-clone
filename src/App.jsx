@@ -11,7 +11,6 @@ import Post from './pages/Post.jsx'
 import Contact from './pages/Contact.jsx'
 import './components/Nav.css'
 import './components/Footer.css'
-import './components/ContactForm.css'
 import './styles/pages.css'
 
 function ScrollToTop() {

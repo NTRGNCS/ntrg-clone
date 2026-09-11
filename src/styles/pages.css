@@ -319,3 +319,30 @@
 .leader__role { margin-bottom:16px; }
 .leader__toggle { margin-top:12px; }
 .leader__contact { font-size:.875rem; }
+
+/* ===== GET IN TOUCH: direct contact details (replaces the form) ===== */
+.git__left { display:flex; flex-direction:column; justify-content:center; align-items:flex-start; }
+.gcontact { width:100%; max-width:440px; margin:8px 0 32px; }
+.gcontact__row { padding:20px 0; border-top:1px solid var(--grey-200); }
+.gcontact__row:last-child { border-bottom:1px solid var(--grey-200); }
+.gcontact dt { font-family:var(--font-display); font-weight:700; font-size:.875rem; line-height:1.25rem; color:var(--gold); margin-bottom:4px; }
+.gcontact dd { font-size:1.125rem; line-height:1.75rem; color:var(--primary); }
+.gcontact dd a { color:var(--primary); transition:color .2s var(--ease); }
+.gcontact dd a:hover { color:var(--gold); }
+.gcontact dd a span { display:block; }
+.gcontact__cta { font-size:1rem; line-height:1.5rem; padding:12px 24px; }
+
+/* Column widths are content widths; add the page gutter so the text column
+   itself is 768px (hero, who-we-are) / 720px (articles), aligned with "We are NTRG". */
+.hero__inner, .whowe__inner { max-width:calc(768px + 2 * var(--gutter)); }
+.post-body { max-width:calc(720px + 2 * var(--gutter)); }
+/* Mission/vision rows: 80px vertical, standard gutter horizontally so edges line up with other sections. */
+.mv { padding:80px var(--gutter); }
+@media (max-width:767px){ .mv { padding:32px var(--gutter); } }
+
+/* The hero video and poster have a ~3.6% black bar baked into their left edge.
+   Shift and widen the video slightly so it's cropped off at every screen size. */
+.hero__video { position:absolute; top:0; left:-4%; width:104%; height:100%; }
+
+/* Once the photo column is hidden, anchor the texture's light (left) side so text stays readable. */
+@media (max-width:860px){ .git { background-position:top left; } }

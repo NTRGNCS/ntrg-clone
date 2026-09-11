@@ -76,7 +76,7 @@ export const difference = {
     { label: 'Differentiator Two', title: 'Fee consistency and leveraging' },
     { label: 'Differentiator Three', title: 'Dual review system for optimized appeals' },
     { label: 'Differentiator Four', title: 'Access to proprietary technology' },
-    { label: 'Differentiator Five', title: 'Compliance and late payment idemnification' },
+    { label: 'Differentiator Five', title: 'Compliance and late payment indemnification' },
     { label: 'Differentiator Six', title: 'Centralized and consistent consulting' },
   ],
 }

@@ -1,6 +1,6 @@
 import useReveal from '../components/useReveal.js'
-import ContactForm from '../components/ContactForm.jsx'
-import { contactPage, contactInfo, getInTouch, img } from '../data/content.js'
+import GetInTouch from '../components/GetInTouch.jsx'
+import { contactPage, img } from '../data/content.js'
 export default function Contact() {
   useReveal()
   return (<>
@@ -15,28 +15,13 @@ export default function Contact() {
       <img className="chero__triangle" src={img.goldTriangle} alt="" aria-hidden="true" />
     </section>
 
-    <section className="git" id="contact">
-      <div className="git__texture texture-bg" aria-hidden="true" />
-      <div className="git__navy" aria-hidden="true" />
-      <div className="wrap git__inner">
-        <div className="git__left">
-          <h3 className="git__heading">{getInTouch.heading}</h3>
-          <p className="git__sub">{getInTouch.sub}</p>
-          <ContactForm />
-        </div>
-        <div className="git__right"><img src={img.getInTouch} alt="" loading="lazy" /></div>
-      </div>
-    </section>
+    {/* Phone / email / office now live here (form removed), so the map band no longer repeats them. */}
+    <GetInTouch />
 
     <section className="section coast"><div className="wrap"><h2 className="gold-text reveal">{contactPage.mapHeading}</h2><p className="reveal">{contactPage.mapSub}</p></div></section>
 
     <section className="section mapband">
       <div className="wrap">
-        <div className="mapband__contacts reveal">
-          <div className="cinfo"><div><div className="cinfo__label">Main office</div><div className="cinfo__val">{contactInfo.addressLines.join(', ')}</div></div></div>
-          <div className="cinfo"><div><div className="cinfo__label">Phone number</div><div className="cinfo__val"><a href={contactInfo.phoneHref}>{contactInfo.phone}</a></div></div></div>
-          <div className="cinfo"><div><div className="cinfo__label">Email address</div><div className="cinfo__val"><a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></div></div></div>
-        </div>
         <div className="mapband__map reveal"><img src={img.usMap} alt="NTRG coverage across the United States" loading="lazy" /></div>
       </div>
     </section>
