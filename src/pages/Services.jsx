@@ -24,7 +24,7 @@ export default function Services() {
     {/* Full-width photo -> navy intro -> white cards overlapping onto texture */}
     <section className="spremier">
       <div className="spremier__photo">
-        <img src={img.premierServices} alt="" loading="lazy" />
+        <img src={img.servicesHandshake} alt="" loading="lazy" />
         <img className="spremier__tri" src={img.goldTriangle} alt="" aria-hidden="true" />
       </div>
       <div className="spremier__navy">

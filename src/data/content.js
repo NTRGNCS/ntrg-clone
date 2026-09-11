@@ -14,6 +14,7 @@ export const img = {
   heroPoster: '/images/hero-poster.jpg',
   whoWeAre: '/images/whoweare.jpg',
   premierServices: '/images/premier-services.jpg',
+  servicesHandshake: '/images/services-handshake-wide.jpg',
   expertiseHero: '/images/expertise-hero.jpg',
   process: '/images/process.jpg',
   difference: '/images/difference.jpg',
@@ -121,8 +122,8 @@ export const servicesPage = {
   trulyHeading: 'We truly do it all.',
   trulySub: 'Explore our additional, end-to-end commercial property tax services.',
   ctaCards: [
-    { heading: 'Our expertise.', body: 'Discover how hyper-local expertise from the best property tax professionals around the country can maximize your business\u2019s savings year in and year out.', cta: 'Our Expertise', to: '/expertise', image: '/images/mission.jpg' },
-    { heading: 'Who we are.', body: 'Through our mission, our vision, and the exceptional people we bring on our team, we remain committed to delivering unmatched value.', cta: 'Meet NTRG', to: '/about', image: '/images/vision.jpg' },
+    { heading: 'Our expertise.', body: 'Discover how hyper-local expertise from the best property tax professionals around the country can maximize your business\u2019s savings year in and year out.', cta: 'Our Expertise', to: '/expertise', image: '/images/cta-expertise.jpg' },
+    { heading: 'Who we are.', body: 'Through our mission, our vision, and the exceptional people we bring on our team, we remain committed to delivering unmatched value.', cta: 'Meet NTRG', to: '/about', image: '/images/cta-whoweare.jpg' },
   ],
 }
 
