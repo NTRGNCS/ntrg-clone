@@ -91,7 +91,7 @@ export default function About() {
       </div>
     </section>
 
-    <PremierBand />
+    <PremierBand overlap={false} />
     <NewsCarousel />
     <GetInTouch />
   </>)

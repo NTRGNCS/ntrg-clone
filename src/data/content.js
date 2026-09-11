@@ -4,8 +4,8 @@
 
 export const contactInfo = {
   addressLines: ['16479 Dallas Parkway, Suite 140', 'Addison, Texas 75001'],
-  phone: '(972) 233-1000',
-  phoneHref: 'tel:+19722331000',
+  phone: '(972) 233-1500',
+  phoneHref: 'tel:+19722331500',
   email: 'info@ntrg-tax.com',
 }
 

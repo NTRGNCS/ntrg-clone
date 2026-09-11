@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import { premierServicesBlurb, img } from '../data/content.js'
-export default function PremierBand() {
+// overlap: pull the card up over the section above (Home, where it sits on the navy band).
+// On pages where a white section comes first (About), use overlap={false}.
+export default function PremierBand({ overlap = true }) {
   return (
-    <section className="premier">
+    <section className={`premier${overlap ? '' : ' premier--flat'}`}>
       <div className="wrap premier__inner">
         <div className="premier__card reveal">
           <div className="premier__text">

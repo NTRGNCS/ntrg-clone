@@ -359,3 +359,47 @@
   .hero__title, .phero__title { font-size:2.5rem; line-height:2.875rem; letter-spacing:-0.05rem; }
   .weare__title, .premier__title, .whowe__title, .mv__title, .einstein p { font-size:2rem; line-height:2.375rem; letter-spacing:-0.05rem; }
 }
+
+/* Premier band without the overlap (About): card sits inside its textured band. */
+.premier--flat { padding-block:96px; }
+.premier--flat .premier__card { margin-top:0; }
+@media (max-width:767px){ .premier--flat { padding-block:64px; } .premier--flat .premier__card { margin-top:0; } }
+
+/* ===== EXPERTISE: match the type scale measured for Home/About ===== */
+.gold-head { font-size:2.5rem; line-height:2.75rem; letter-spacing:-0.075rem; }
+.process__intro, .diff__intro { max-width:768px; }
+.process__intro .gold-head, .diff__intro .gold-head { margin-bottom:16px; }
+.process__intro p, .diff__intro p { font-size:1.125rem; line-height:1.75rem; }
+.compare__head { max-width:768px; }
+.compare__head .gold-head { margin-bottom:12px; }
+.compare__head p { font-size:1.125rem; line-height:1.75rem; }
+.pstep__label { font-size:1.25rem; line-height:1.75rem; margin-bottom:6px; }
+.pstep__body { font-size:1rem; line-height:1.625rem; }
+.diff__item .d-label { font-size:.875rem; line-height:1.25rem; color:var(--grey-500); }
+.diff__item .d-title { font-size:1.125rem; line-height:1.5rem; margin-top:4px; }
+.diff__items { gap:32px 40px; }
+.ctable thead th { font-size:.875rem; }
+.ctable tbody td.col-label { font-size:.9375rem; }
+/* Big pull quote: same treatment as the Einstein quote on About. */
+.pullquote { padding-block:96px; }
+.pullquote p { font-size:3rem; line-height:3.438rem; letter-spacing:-0.06rem; max-width:30ch; }
+@media (max-width:1200px){ .pullquote { padding-block:72px; } }
+@media (max-width:767px){
+  .gold-head { font-size:2rem; line-height:2.375rem; letter-spacing:-0.05rem; }
+  .pullquote { padding-block:64px; }
+  .pullquote p { font-size:2rem; line-height:2.375rem; letter-spacing:-0.05rem; }
+  .diff__items { grid-template-columns:1fr; gap:24px; }
+}
+/* Balance the big quotes so no word is stranded on its own line. */
+.pullquote p { max-width:44ch; text-wrap:balance; }
+.einstein p { text-wrap:balance; }
+
+/* Phones: fit all four comparison columns on screen instead of hiding competitors behind a sideways scroll. */
+@media (max-width:720px){
+  .ctable { min-width:0; table-layout:fixed; }
+  .ctable th, .ctable td { padding:.8rem .3rem; }
+  .ctable thead th { font-size:.6875rem; line-height:1rem; vertical-align:bottom; }
+  .ctable th.col-ntrg .m { font-size:.95rem; }
+  .ctable thead th.col-label, .ctable tbody td.col-label { width:40%; padding-left:0; }
+  .ctable tbody td.col-label { font-size:.75rem; line-height:1.1rem; letter-spacing:.01em; }
+}
