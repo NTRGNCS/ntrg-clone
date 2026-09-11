@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import useReveal from '../components/useReveal.js'
 import GetInTouch from '../components/GetInTouch.jsx'
 import PremierBand from '../components/PremierBand.jsx'
@@ -32,17 +33,19 @@ function Leader({ p }) {
 export default function About() {
   useReveal()
   return (<>
-    <section className="phero">
-      <div className="phero__bg"><img src={img.expertiseHero} alt="" /></div>
-      <div className="phero__scrim" aria-hidden="true" />
-      <div className="wrap phero__inner">
-        <h1 className="phero__title"><span>{aboutHero.line1}</span><span>{aboutHero.line2}</span></h1>
+    <section className="phero phero--notch">
+      <div className="phero__shape" aria-hidden="true">
+        <div className="phero__bg"><img src={img.expertiseHero} alt="" /></div>
+        <div className="phero__scrim" />
+      </div>
+      <div className="wrap phero__inner phero__inner--col">
+        <h1 className="phero__title phero__title--nowrap"><span>{aboutHero.line1}</span><span>{aboutHero.line2}</span></h1>
         <p className="phero__sub">{aboutHero.sub}</p>
       </div>
       <img className="phero__triangle" src={img.goldTriangle} alt="" aria-hidden="true" />
     </section>
 
-    <section>
+    <section className="about-mission">
       <div className="wrap mv">
         <div className="reveal"><h2 className="mv__title">{mission.heading}</h2><p className="mv__body">{mission.body}</p></div>
         <div className="mv__media reveal"><img src={img.mission} alt="" loading="lazy" /></div>
@@ -56,7 +59,10 @@ export default function About() {
       </div>
     </section>
 
-    <section className="section einstein"><div className="wrap"><p className="gold-text reveal">{einstein}</p></div></section>
+    <section className="section einstein"><div className="wrap">
+      {/* Break after the quote, before the attribution, like the vendor */}
+      <p className="gold-text reveal">{einstein.split(' - ').map((part, i, a) => <span key={i}>{part}{i < a.length - 1 ? ' -' : ''} </span>)}</p>
+    </div></section>
 
     {/* IN MEMORIAM — our treatment (Clayton passed 9/30/2025) */}
     <section className="memoriam">
@@ -74,7 +80,12 @@ export default function About() {
     {/* Leadership — Josh (President), Debbie (EVP), Jan */}
     <section className="leadership">
       <div className="wrap">
-        <div className="shead reveal"><h2 className="shead__title">{leadershipIntro.heading}</h2><p className="shead__sub">{leadershipIntro.body}</p></div>
+        <div className="shead reveal">
+          <h2 className="shead__title">{leadershipIntro.heading}</h2>
+          <p className="shead__sub">{leadershipIntro.body}</p>
+          <p className="shead__cta">{leadershipIntro.cta}</p>
+          <Link to="/contact" className="btn btn--gold shead__btn">Contact Us</Link>
+        </div>
         <div className="leaders reveal">
           {leadership.map(p => <Leader p={p} key={p.name} />)}
         </div>
@@ -91,7 +102,7 @@ export default function About() {
       </div>
     </section>
 
-    <PremierBand overlap={false} />
+    <PremierBand variant="band" />
     <NewsCarousel />
     <GetInTouch />
   </>)

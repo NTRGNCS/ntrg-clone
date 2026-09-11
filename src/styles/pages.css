@@ -576,3 +576,52 @@ main > section, main > div { max-width:1440px; margin-left:auto; margin-right:au
 .struly__list { display:flex; flex-direction:column; gap:32px; grid-template-columns:none; grid-template-rows:none; max-width:none; }
 @media (max-width:767px){ .spremier__intro { font-size:1.125rem; line-height:1.75rem; } }
 @media (max-width:600px){ .struly__lists { grid-template-columns:1fr; row-gap:20px; } .struly__list { gap:20px; } }
+
+/* =====================================================================
+   ABOUT — matched to vendor (Sept 2026 screenshots)
+   ===================================================================== */
+/* Mission/vision: vendor uses 80px padding on all sides (reverting my earlier gutter change). */
+.mv { padding:80px; }
+.about-mission { margin-top:70px; }     /* room for the hero's gold triangle, as on Services */
+.mv__body { font-size:1.25rem; line-height:1.875rem; color:var(--navy-black); }
+.vision-band .mv__body { color:rgba(255,255,255,.9); }
+@media (max-width:1100px){ .mv { padding:64px var(--gutter); gap:48px; } }
+@media (max-width:767px){ .about-mission { margin-top:48px; } .mv { padding:32px var(--gutter); } .mv__body { font-size:1.125rem; line-height:1.75rem; } }
+
+/* Leadership intro: bigger heading/body, bold call-to-action line + Contact Us button */
+.leadership .shead { max-width:768px; margin-bottom:56px; }
+.leadership .shead__title { font-size:2.5rem; line-height:2.75rem; letter-spacing:-0.075rem; margin-bottom:16px; }
+.leadership .shead__sub { font-size:1.25rem; line-height:1.875rem; color:var(--navy-black); }
+.shead__cta { margin-top:16px; font-size:1.25rem; line-height:1.875rem; font-weight:700; color:var(--navy-black); }
+.shead__btn { margin-top:28px; font-size:1rem; line-height:1.5rem; padding:12px 24px; }
+@media (max-width:767px){
+  .leadership .shead__title { font-size:2rem; line-height:2.375rem; letter-spacing:-0.05rem; }
+  .leadership .shead__sub, .shead__cta { font-size:1.125rem; line-height:1.75rem; }
+}
+
+/* Premier card on its own navy band (About): navy top 360px, card overlaps onto texture,
+   gold triangle straddling the band's top edge at the right. */
+.premier--band { background:#f1f1f1 url('/textures/premier-texture.webp') top center/1440px auto; padding-bottom:110px; }
+.premier--band::before { content:""; position:absolute; left:0; right:0; top:0; height:360px;
+  background:linear-gradient(228.09deg, #2A3760 6.9%, #030409 88.22%); }
+.premier--band .premier__inner { padding-top:88px; }
+.premier--band .premier__card { margin-top:0; }
+.premier--band .premier__triangle { left:auto; right:0; top:0; bottom:auto; transform:translateY(-50%); }
+@media (max-width:767px){
+  .premier--band { padding-bottom:64px; }
+  .premier--band::before { height:220px; }
+  .premier--band .premier__inner { padding-top:48px; }
+  .premier--band .premier__card { margin-top:0; }
+}
+/* Measured: vendor's About body copy is 24px on a 30px line. */
+.mv__body, .leadership .shead__sub, .shead__cta { font-size:1.5rem; line-height:1.875rem; }
+/* Montserrat is wider than the vendor's font: keep each headline line whole on desktop (may run slightly past the 768px column). */
+@media (min-width:1200px){ .phero__title--nowrap span { white-space:nowrap; } }
+@media (max-width:767px){ .mv__body, .leadership .shead__sub, .shead__cta { font-size:1.125rem; line-height:1.75rem; } }
+/* Einstein quote: quote on line 1, attribution on line 2; sized so line 1 fits in Montserrat. */
+.einstein p { font-size:clamp(2rem, 3vw, 2.75rem); line-height:1.15; max-width:none; }
+.einstein p span { display:block; }
+@media (max-width:767px){ .einstein p span { display:inline; } }
+/* Premier card on About: text top-aligned and a 540px photo column, as on the vendor page. */
+.premier--band .premier__card { align-items:start; grid-template-columns:minmax(0,1fr) minmax(0,540px); }
+@media (max-width:860px){ .premier--band .premier__card { grid-template-columns:1fr; } }
