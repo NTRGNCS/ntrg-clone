@@ -11,10 +11,21 @@ import Post from './pages/Post.jsx'
 import Contact from './pages/Contact.jsx'
 import Legal from './pages/Legal.jsx'
 import { terms, privacy } from './data/legal.js'
+import { metaFor } from './data/meta.js'
 import './components/Nav.css'
 import './components/Footer.css'
 import './styles/pages.css'
 
+// Per-page browser-tab title and search description (see src/data/meta.js).
+function PageMeta() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    const { title, description } = metaFor(pathname)
+    document.title = title
+    document.querySelector('meta[name="description"]')?.setAttribute('content', description)
+  }, [pathname])
+  return null
+}
 function ScrollToTop() {
   const { pathname } = useLocation()
   // Jump (not smooth-scroll) to the top on page change; html has scroll-behavior:smooth for in-page anchors.
@@ -23,7 +34,7 @@ function ScrollToTop() {
 }
 export default function App() {
   return (<>
-    <ScrollToTop /><Nav />
+    <ScrollToTop /><PageMeta /><Nav />
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
