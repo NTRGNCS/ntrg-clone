@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
-// Client Portal: WigleyHub (opens in a new tab so the NTRG site stays open).
-const PORTAL_URL = 'https://www.wigleyhub.com'
+// Client Portal: TaxNav client login (opens in a new tab so the NTRG site stays open).
+const PORTAL_URL = 'https://ntrg-taxnav.com/ntrg/index.php'
 const links = [
   { to: '/expertise', label: 'Our Expertise' },
   { to: '/services', label: 'Our Services' },
