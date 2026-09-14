@@ -182,13 +182,15 @@ export const leadership = [
     ],
   },
   {
-    name: 'Debbie Garcia', role: 'Executive Vice President of Consulting and Client Services', photo: '/team/debbie.png',
+    name: 'Debbie Garcia', role: 'Partner, Executive Vice President', photo: '/team/debbie.png',
     linkedin: 'https://www.linkedin.com/in/garciadebbie/', email: 'dgarcia@ntrg-tax.com', office: '(954) 698-0051', cell: '(954) 471-2054',
-    short: 'Ms. Garcia began her career with NTRG in 2004 as a Senior Director overseeing NTRG\u2019s Southeast Operations in the NTRG Florida office.',
+    short: 'Ms. Garcia is a Partner and senior executive at NTRG with more than 35 years of tax industry experience, including over two decades with the firm.',
     full: [
-      'Ms. Garcia began her career with NTRG in 2004 as a Senior Director overseeing NTRG\u2019s Southeast Operations in the NTRG Florida Office. In this role, she was responsible for the effective management of a comprehensive property tax consulting program for national and regional clients. This responsibility included the oversight of property tax valuation issues and appeals for a $4B portfolio of commercial real estate and personal property tax assets.',
-      'Ms. Garcia currently serves as Executive Vice President of Consulting and Client Services. Her current responsibilities include managing consultants in 100% of all markets to ensure that the \u201cbest of the best\u201d consultants are in place throughout the country. She also oversees client services, providing valuation and property tax consulting, appeal/litigation, tax planning, and compliance expertise to ensure satisfaction on client engagements.',
-      'Prior to joining NTRG, Ms. Garcia served as Tax Director in the Corporate Tax Sector. Ms. Garcia has combined experience of more than 30 years in the tax industry. She received her Bachelor of Business Administration (BBA) degree in Corporate Management, cum laude, from Florida Atlantic University. Ms. Garcia is also a long-standing member of the Institute for Professionals in Taxation (IPT).',
+      'As Executive Vice President, Ms. Garcia provides firm-wide leadership across consulting, client services, financial operations, and strategic business performance.',
+      'Ms. Garcia oversees NTRG\u2019s national consulting platform and client services across all markets, ensuring clients have access to leading industry expertise and consistently exceptional service. Her responsibilities encompass property tax valuation and consulting, assessment appeals and litigation, tax planning, compliance, client relationships, and overall engagement performance, representing a $9 billion portfolio of commercial real estate and personal property tax assets.',
+      'In addition, Ms. Garcia has executive responsibility for the firm\u2019s financial performance, including budgeting, forecasting, revenue and expense management, profitability, resource allocation, and financial planning. She works closely with senior leadership to establish business priorities, drive operational efficiencies, evaluate performance, and align financial strategy with NTRG\u2019s long-term growth objectives.',
+      'Ms. Garcia joined NTRG in 2004 as a Senior Director overseeing Southeast Operations from the firm\u2019s Florida office. In that role, she directed comprehensive property tax consulting programs for national and regional clients, including valuation and appeals involving a multi-billion-dollar portfolio of commercial real estate and personal property tax assets.',
+      'Prior to joining NTRG, Ms. Garcia served as Tax Director within the Corporate Tax Sector. She holds a Bachelor of Business Administration in Corporate Management, cum laude, from Florida Atlantic University, and is a long-standing member of the Institute for Professionals in Taxation (IPT).',
     ],
   },
   {
