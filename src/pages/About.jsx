@@ -13,7 +13,7 @@ function Leader({ p }) {
       <img className="leader__photo" src={p.photo} alt={p.name} loading="lazy" />
       <div>
         <h3 className="leader__name">{p.name}</h3>
-        <div className="leader__role">{p.role}</div>
+        <div className="leader__role">{Array.isArray(p.role) ? p.role.map(l => <span key={l}>{l}</span>) : p.role}</div>
         <p className="leader__bio">{p.short}</p>
         <button className="leader__toggle" onClick={()=>setOpen(v=>!v)} aria-expanded={open}>{open?'Read less':'Read Full Bio'}</button>
         {open && p.email && (

@@ -703,3 +703,5 @@ main > section, main > div { max-width:1440px; margin-left:auto; margin-right:au
 @media (max-width:767px){ .coast2__title { font-size:1.625rem; line-height:2.125rem; } }
 .gcontact dd > span { display:block; }
 .legal__offices { margin:8px 0 6px; }
+/* A leader's title may be several lines (e.g. Partner / Executive Vice President). */
+.leader__role span { display:block; }

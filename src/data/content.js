@@ -182,7 +182,7 @@ export const leadership = [
     ],
   },
   {
-    name: 'Debbie Garcia', role: 'Partner, Executive Vice President', photo: '/team/debbie.png',
+    name: 'Debbie Garcia', role: ['Partner', 'Executive Vice President'], photo: '/team/debbie.png',
     linkedin: 'https://www.linkedin.com/in/garciadebbie/', email: 'dgarcia@ntrg-tax.com', office: '(954) 698-0051', cell: '(954) 471-2054',
     short: 'Ms. Garcia is a Partner and senior executive at NTRG with more than 35 years of tax industry experience, including over two decades with the firm.',
     full: [
