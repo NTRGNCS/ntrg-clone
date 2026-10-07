@@ -174,11 +174,11 @@ export const leadership = [
   {
     name: 'Joshua Sanchez', role: 'President', photo: '/team/josh.png',
     linkedin: 'https://www.linkedin.com/in/propertytaxguru/', email: 'jsanchez@ntrg-tax.com', office: '(214) 635-1616', cell: '(646) 546-4509',
-    short: 'Mr. Sanchez has been in the real estate and property tax industry since 2005. He has nationwide experience in both commercial property valuation and property tax consulting.',
+    short: 'Mr. Sanchez is President of NTRG and has been in commercial real estate valuation and property tax consulting since 2005, with nationwide experience across all major property types.',
     full: [
-      'Mr. Sanchez has been in the real estate and property tax industry since 2005. He has nationwide experience in both commercial property valuation and property tax consulting.',
-      'Within NTRG, he is responsible for managing the appeals process for several NTRG clients and assisting clients with budgeting property taxes for currently owned properties and potential new acquisitions.',
-      'Mr. Sanchez earned his Bachelor\u2019s Degree in Finance from Yeshiva University\u2019s Sy Syms School of Business. He is a licensed Senior Property Tax Consultant in the state of Texas.',
+      'Mr. Sanchez is President of National Tax Resource Group, where he sets the firm\u2019s strategic direction and oversees client service, appeals, and the firm\u2019s analytical practice. He has been in the real estate valuation and property tax industry since 2005 and joined NTRG in 2010. Having been with the firm for more than fifteen years, he built the firm\u2019s valuation and analytics capabilities, including pre-acquisition and pre-development tax analyses, post-acquisition reviews, and property tax budgeting. He also developed the training program that prepares NTRG consultants to manage client portfolios of their own. He continues to manage key client relationships alongside his leadership role.',
+      'Before joining NTRG, Mr. Sanchez spent several years with leading national and international valuation and advisory firms. He prepared real estate appraisals for purchase price allocation, financial reporting, acquisitions and dispositions, financing, and litigation support for Fortune 500 companies, government agencies, financial institutions, and law firms. His work covered office, retail, industrial, and specialty properties, as well as high-profile assignments such as 30 Rockefeller Plaza in New York and Chase Tower in Dallas, plus international engagements in Mexico and Costa Rica. On the property tax side, he managed a multi-state portfolio for one of the nation\u2019s largest auto retailers, producing more than $1 million in tax savings across 15 states.',
+      'Mr. Sanchez earned his Bachelor of Science in Finance from Yeshiva University\u2019s Sy Syms School of Business and is a licensed Senior Property Tax Consultant in Texas. He has served as Treasurer of the Hebrew Order of David International for over five years and is a former Sergeant at Arms of his local Rotary club.',
     ],
   },
   {
